@@ -2,59 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stop Hackers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>🛡️ Stop Hackers</h1>
     <nav>
-      <a href="#tips">Tips</a>
-      <a href="#resources">Resources</a>
-      <a href="#about">About</a>
+      <ul>
+        <li><a href="#" data-page="home" class="active">Home</a></li>
+        <li><a href="#" data-page="about">About Me</a></li>
+        <li><a href="#" data-page="websites">Websites</a></li>
+        <li><a href="#" data-page="videos">Video Links</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="hero">
-    <h2>Learn how to stay safe online</h2>
-    <p>Protect yourself from hackers with easy, clear tips.</p>
-    
-    <!-- 📹 Your YouTube Video -->
-    <div class="video-container">
-      <iframe width="100%" height="400" src="https://www.youtube.com/watch_popup?v=lUL2vgyhsw4" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
+  <main>
+    <!-- 🔒 HOME -->
+    <section id="home" class="page active">
+      <h2>Welcome</h2>
+      <p>Learn how to stay safe online and stop scammers in their tracks.</p>
+    </section>
 
-  <section id="tips">
-    <h2>Top Safety Tips</h2>
-    <ul>
-      <li>Use strong, unique passwords for each site.</li>
-      <li>Enable two-factor authentication.</li>
-      <li>Don't click on suspicious links or emails.</li>
-      <li>Keep your software and antivirus updated.</li>
-      <li>Use secure Wi-Fi networks.</li>
-    </ul>
-  </section>
+    <!-- 👤 ABOUT -->
+    <section id="about" class="page">
+      <h2>About Me</h2>
+      <p>I'm passionate about helping people stay safe on the internet by teaching simple but powerful ways to stop hackers.</p>
+    </section>
 
- <section id="resources">
-  <h2>Helpful Websites to Stop Scammers</h2>
-  <ul>
-    <li><a href="https://webhook-deleter.netlify.app/" target="_blank">Webhook Deleter</a> – Quickly remove stolen Discord webhooks.</li>
-    <li><a href="https://discohook.app/?data=eyJ2ZXJzaW9uIjoiZDIiLCJtZXNzYWdlcyI6W3siX2lkIjoicjYybjhrT0MxbiIsImRhdGEiOnsiY29udGVudCI6IkBldmVyeW9uZSBkb24ndCB0cnkgc2NhbW1pbmcgZ3V5cyBpdHMgbm90IGNvb2whIExvc2VycyEiLCJlbWJlZHMiOltdLCJhdHRhY2htZW50cyI6W10sInVzZXJuYW1lIjoiSGFja2VkIExPTFMifX1dfQ" target="_blank">Discohook Warning Message</a> – OVERLOAD the scammers webhook lol.</li>
-    <li><a href="https://www.uncoverit.org/" target="_blank">UncoverIt</a> – Expose scammer sites and fake communities.</li>
-    <li><a href="https://haveibeenpwned.com/" target="_blank">Have I Been Pwned</a> – Check if your email or password has been leaked.</li>
-  </ul>
+    <!-- 🔗 WEBSITES -->
+    <section id="websites" class="page">
+      <h2>Helpful Websites</h2>
+      <ul>
+        <li><a href="https://webhook-deleter.netlify.app/" target="_blank">Webhook Deleter</a> – Remove Discord webhooks.</li>
+        <li><a href="https://discohook.app/?data=eyJ2ZX..." target="_blank">Discohook Message</a> – Warn others about scams.</li>
+        <li><a href="https://www.uncoverit.org/" target="_blank">UncoverIt</a> – Find fake sites and scammers.</li>
+        <li><a href="https://haveibeenpwned.com/" target="_blank">Have I Been Pwned</a> – Check if your info has been exposed.</li>
+      </ul>
+    </section>
+
+  <section id="videos" class="page">
+  <h2>Video Links</h2>
+  <button id="openVideo">▶️ Watch Video</button>
 </section>
 
+<!-- 🎥 VIDEO MODAL -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <video controls autoplay>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
 
-  <section id="about">
-    <h2>About This Site</h2>
-    <p>This site was made to help people understand basic internet safety and stop common hacker attacks.</p>
-  </section>
 
   <footer>
     <p>Made by [Your Name] • Stay safe out there!</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
