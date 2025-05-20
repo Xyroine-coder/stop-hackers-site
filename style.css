@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #0ff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+#hero {
+  background: #e0f7fa
+}
+
+.video-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
